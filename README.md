@@ -1,2 +1,2 @@
 # HackerRank
-practice
+nubicu's exercises / practice
