@@ -32,7 +32,7 @@ int main()
         cout << "Values for a and b : ";
         cin >> a >> b;
         int result = squares(a, b);
-        cout << "Number of square integers in the range: " << result << endl;
+        cout << "Number of square integers in the range : " << result << endl;
     }
     return 0;
 }
