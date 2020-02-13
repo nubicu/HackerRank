@@ -28,8 +28,8 @@ string angryProfessor(int k, vector <int> a) {
     {
         if(a[i]<=0) {c++;}
     }
-    if(c>=k) {returnString = "NO";}
-    else {returnString = "YES";}
+    if(c>=k) { returnString = "NO"; }
+    else { returnString = "YES"; }
     
     return returnString;
 }
