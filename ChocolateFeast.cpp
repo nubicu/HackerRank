@@ -17,7 +17,7 @@ using namespace std;
 int chocolateFeast(int n, int c, int m) {
     int w, choc;
     
-    choc=n/c; // number of chocolates that he can buy with the ammount of money he have
+    choc=n/c; // Number of chocolates that he can buy with the ammount of money he have
     if(choc>=m)
         for(w=choc;w>=m;choc++,w=w-m+1);
     
