@@ -1,6 +1,10 @@
-// Service Lane
-// link : https://www.hackerrank.com/challenges/service-lane/problem
-/* 
+//============================================================================
+// Name        : ServiceLane.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/service-lane/problem
+//============================================================================
+/* Description : 
 Calvin is driving his favorite vehicle on the 101 freeway. He notices that the check engine light of his vehicle is on, and he wants to service it immediately to avoid any risks. Luckily, a service lane runs parallel to the highway. The service lane varies in width along its length.
 
 You will be given an array of widths at points along the road (indexes), then a list of the indexes of entry and exit points. Considering each entry and exit point pair, calculate the maximum size vehicle that can travel that segment of the service lane safely.

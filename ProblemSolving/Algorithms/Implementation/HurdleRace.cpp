@@ -1,5 +1,10 @@
-// The Hurdle Race
-/*
+//============================================================================
+// Name        : HurdleRace.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/the-hurdle-race/problem
+//============================================================================
+/* Description : 
 Dan is playing a video game in which his character competes in a hurdle race. Hurdles are of varying
 heights, and Dan has a maximum height he can jump. There is a magic potion he can take that will
 increase his maximum height by 1 unit for each dose. How many doses of the potion must he take to be

@@ -1,5 +1,10 @@
-// The time in words
-/*
+//============================================================================
+// Name        : TimeInWords.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/the-time-in-words/problem
+//============================================================================
+/* Description : 
 Given the time in numerals we may convert it into words, as shown below:
 5:00 -> five o' clock
 5:01 -> one minute past five

@@ -1,6 +1,30 @@
-// Lonely Integer
-/*
+//============================================================================
+// Name        : LonelyInteger.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/lonely-integer/problem
+//============================================================================
+/* Description : 
+You will be given an array of integers. All of the integers except one occur twice.
+That one is unique in the array.
+Given an array of integers, find and print the unique element.
+For example, a = [1, 2, 3, 4, 3, 2, 1], the unique element is 4.
 
+Function Description
+Complete the lonelyinteger function to return the integer which occurs only once in
+the input array.
+lonelyinteger has the following parameter(s):
+- a: an array of integers
+
+Input Format
+The first line contains a single integer, n, denoting the number of integers in the array.
+The second line contains n space-separated integers describing the values in a.
+
+Constraints : 
+1 <= n < 100; 0 <= a[i] <= 100, 0 <= i < n
+It is guaranteed that n is an odd number and that there is one unique element.
+
+Output Format : Print the unique integer in the array.
 */
 
 #include <bits/stdc++.h>

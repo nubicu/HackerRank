@@ -1,5 +1,10 @@
-// Chocolate Feast
-/* 
+//============================================================================
+// Name        : ChocolateFeast.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/chocolate-feast/problem
+//============================================================================
+/* Description :
 Little Bobby loves chocolate. He frequently goes to his favorite store to buy them. If Bobby saves enough wrappers, he can turn them in for a free chocolate (promotion)
 Complete the chocolateFeast function in the code stub below to return the number of chocolates Bobby can eat with a given amount of money after taking full advantage of the promotion.
 Note: Little Bobby will always turn in his wrappers if he has enough to get a free chocolate.

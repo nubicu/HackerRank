@@ -1,6 +1,10 @@
-// Viral Advertising
-// https://www.hackerrank.com/challenges/strange-advertising/problem
-/*
+//============================================================================
+// Name        : ViralAdvertising.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/strange-advertising/problem
+//============================================================================
+/* Description : 
 HackerLand Enterprise is adopting a new viral advertising strategy. When they launch a new product,
 they advertise it to exactly 5 people on social media.
 On the first day, half of those  people (i.e., floor(5/2)=2) like the advertisement and each shares

@@ -1,5 +1,10 @@
-// Divisible Sum Pairs
-/*
+//============================================================================
+// Name        : DivisibleSumPairs.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
+//============================================================================
+/* Description :
 You are given an array of n integers ar and a positive integer k.
 Find and print the number of (i,j) pairs where i<j and ar[i] + ar[j] is divisible by k.
 For example, ar = [1,2,3,4,5,6] and k=5.

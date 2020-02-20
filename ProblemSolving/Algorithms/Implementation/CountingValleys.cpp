@@ -1,5 +1,10 @@
-// Counting Valleys
-/*
+//============================================================================
+// Name        : CountingValleys.cpp
+// Author      : Robert Buzabrici-Filipescu
+// Copyright   : HackerRank
+// Link        : https://www.hackerrank.com/challenges/counting-valleys/problem
+//============================================================================
+/* Description :
 Gary is an avid hiker. He tracks his hikes meticulously, paying close attention to small details
 like topography. During his last hike he took exactly n steps. For every step he took, he noted if
 it was an uphill, U, or a downhill, D step. Gary's hikes start and end at sea level and each step up
