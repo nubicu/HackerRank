@@ -2,7 +2,7 @@
 // Name        : BombermanGame.cpp
 // Author      : Robert Buzabrici-Filipescu
 // Copyright   : HackerRank
-// Link        : https://www.hackerrank.com/challenges/drawing-book/problem
+// Link        : https://www.hackerrank.com/challenges/bomber-man/problem
 //============================================================================
 /* Description :
 Bomberman lives in a rectangular grid. Each cell in the grid either contains a
