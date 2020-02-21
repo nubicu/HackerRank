@@ -52,7 +52,7 @@ int main()
         int n;
         cout << "Number of digits in the number : ";
         cin >> n;
-        int x = -1,y = -1;
+        int x = -1, y = -1;
 
         for(int i = n/3; i >= 0; i--)
             if((n - 3 * i) % 5 == 0)
