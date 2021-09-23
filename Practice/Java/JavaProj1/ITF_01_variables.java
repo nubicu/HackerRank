@@ -16,6 +16,7 @@ public class ITF_01_variables {
         String marca = "Golf";
         String model = "IV";
         int an_fabricatie = 2011;
+        int viteza_actuala = 50;
         double pret = 790.50;
         boolean inmatriculata = true;
 
@@ -25,6 +26,7 @@ public class ITF_01_variables {
         // printam in consola mesaje, folosindu-ne de datele salvate in variabile
         System.out.println("Vand " + marca + " " + model + ", fabricat in " + an_fabricatie + ".");
         System.out.println("Nu bate nu troncane. Pentru pretentiosi. Pret: " + pret + " euro.");
+        System.out.println("Viteza actuala este de " + viteza_actuala + " km/h");
 
         /* exercitiu:
         declara o variabila in care sa pastrezi viteza actuala a masinii (ex: 50)

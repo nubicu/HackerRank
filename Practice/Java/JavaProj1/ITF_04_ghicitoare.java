@@ -2,12 +2,16 @@ import java.util.Scanner;
 
 public class ITF_04_ghicitoare {
 
+  public static int getRandomNumber(int min, int max) {
+    return (int) ((Math.random() * (max - min)) + min);
+  }
+
     public static void main(String[] args) {
 
         // joculet ghicitoare numar secret care leaga tot ce am invatat pana acum
         // ghiceste un numar intre 1-30, afiseaza hint-uri < sau mai >
 
-        int numar = 5;
+        int numar = getRandomNumber(3, 100);
         int numar_ghicit = 0;
 
         while (numar_ghicit != numar){ // atat timp cat inca nu s-a ghicit nr, continua jocul
