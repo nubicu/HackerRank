@@ -3,7 +3,9 @@
 
 The following programs are my submissions for competitive programming problems at http://www.hackerrank.com.<br/>
 
-The repository is mostly for private storage purposes but please feel free to use these solutions as references/hints for your own solutions. All solutions are written in C++ and have successfully passed all sub-tasks for their respective problems. The repository is updated throughout the year for new problems.
+The repository is mostly for private storage purposes but please feel free to use these solutions as references/hints for your own solutions. All solutions are written in C/C++ and have successfully passed all sub-tasks for their respective problems. The repository is updated throughout the year for new problems.
+
+Also, the repository contains some Java examples from a workshop organized by IT Factory.
 
 # Contact Me
 
