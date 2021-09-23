@@ -4,7 +4,7 @@
 // Copyright   : HackerRank
 // Link        : https://www.hackerrank.com/challenges/sherlock-and-the-beast/problem
 //============================================================================
-/* Description : 
+/* Description :
 Sherlock Holmes suspects his archenemy Professor Moriarty is once again plotting something
 diabolical. Sherlock's companion, Dr. Watson, suggests Moriarty may be responsible for MI6's
 recent issues with their supercomputer, The Beast.
