@@ -115,7 +115,7 @@ int main()
     cin >> n; //The number of objects that is going to be created.
     Person *per[n];
 
-    for(int i = 0;i < n;i++)
+    for(int i = 0;i < n; i++)
     {
         cin >> val;
         if(val == 1)
