@@ -5,15 +5,23 @@
 // Link        : https://www.hackerrank.com/challenges/magic-spells/problem
 //============================================================================
 /* Description : 
-You are battling a powerful dark wizard. He casts his spells from a distance, giving you only a few seconds to react and conjure your counterspells. For a counterspell to be effective, you must first identify what kind of spell you are dealing with.
-The wizard uses scrolls to conjure his spells, and sometimes he uses some of his generic spells that restore his stamina. In that case, you will be able to extract the name of the scroll from the spell. Then you need to find out how similar this new spell is to the spell formulas written in your spell journal.
+You are battling a powerful dark wizard. He casts his spells from a distance, giving you only
+a few seconds to react and conjure your counterspells. For a counterspell to be effective,
+you must first identify what kind of spell you are dealing with.
+The wizard uses scrolls to conjure his spells, and sometimes he uses some of his generic spells
+that restore his stamina.
+In that case, you will be able to extract the name of the scroll from the spell.
+Then you need to find out how similar this new spell is to the spell formulas written in your spell journal.
 Spend some time reviewing the locked code in your editor, and complete the body of the counterspell function.
 
-Input Format : The wizard will read t scrolls, which are hidden from you. Every time he casts a spell, it's passed as an argument to your counterspell function.
+Input Format : The wizard will read t scrolls, which are hidden from you. Every time he casts a spell,
+it's passed as an argument to your counterspell function.
 
 Constraints : 1<=t<=100; 1<=|s|<=1000, where is is a scroll name; each scroll name s consists of uppercase and lowercase letters
 
-Output Format : After identifying the given spell, print its name and power. If it is a generic spell, find a subsequence of letters that are contained in both the spell name and your spell journal. Among all such subsequences, find and print the length of the longest one on a new line.
+Output Format : After identifying the given spell, print its name and power. If it is a generic spell,
+find a subsequence of letters that are contained in both the spell name and your spell journal.
+Among all such subsequences, find and print the length of the longest one on a new line.
 */
 
 #include <iostream>
@@ -78,29 +86,55 @@ class SpellJournal {
 }; 
 string SpellJournal::journal = "";
 
-void counterspell(Spell *spell) {
-    if(Fireball *p=dynamic_cast<Fireball*>(spell))p->revealFirepower();
-    else if(Frostbite *p=dynamic_cast<Frostbite*>(spell))p->revealFrostpower();
-    else if(Thunderstorm *p=dynamic_cast<Thunderstorm*>(spell))p->revealThunderpower();
-    else if(Waterbolt *p=dynamic_cast<Waterbolt*>(spell))p->revealWaterpower();
-    else{
-        string a=SpellJournal::journal,b=spell->revealScrollName();
-        void LCS(const string &a,const string &b);
-        LCS(a,b);
-    }
-}
-
-#include <cstring>
-short lcs[2001][2001];
-void LCS(const string &a,const string &b){
-    memset(lcs,0,sizeof(lcs));
-    int m=0,i=1,j,_a=a.size(),_b=b.size();
-    for(;i<=_a;i++)
-        for(j=1;j<=_b;j++){
-            lcs[i][j]=max(a[i-1]==b[j-1]?lcs[i-1][j-1]+1:0,max<int>(lcs[i-1][j],lcs[i][j-1]));
-            if(m<lcs[i][j])m=lcs[i][j];
+void counterspell(Spell *spell)
+{
+/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    if (Fireball *s = dynamic_cast<Fireball *>(spell)) 
+    {
+        s->revealFirepower();
+    } 
+    else if (Frostbite *s = dynamic_cast<Frostbite *>(spell)) 
+    {
+        s->revealFrostpower();
+    } 
+    else if (Thunderstorm *s = dynamic_cast<Thunderstorm *>(spell)) 
+    {
+        s->revealThunderpower();
+    } 
+    else if (Waterbolt *s = dynamic_cast<Waterbolt *>(spell)) 
+    {
+        s->revealWaterpower();
+    } 
+    else 
+    {
+        string scroll_name = spell->revealScrollName();
+        string journal = SpellJournal::read();
+        size_t s_size = scroll_name.size();
+        size_t j_size = journal.size();
+        if (s_size == 1 && j_size == 1 && scroll_name == journal) 
+        {
+            cout << 1 << endl;
+        } 
+        else 
+        {
+            vector<vector<size_t>> lcs_table(s_size + 1, vector<size_t>(j_size + 1));
+            for (size_t i = 1; i <= s_size; ++i) 
+            {
+                for (size_t j = 1; j <= j_size; ++j) 
+                {
+                    if (scroll_name[i - 1] == journal[j - 1]) 
+                    {
+                        lcs_table[i][j] = lcs_table[i - 1][j - 1] + 1;
+                    } 
+                    else 
+                    {
+                        lcs_table[i][j] = max(lcs_table[i][j - 1], lcs_table[i - 1][j]);
+                    } 
+                }
+            }
+            cout << lcs_table[s_size][j_size] << endl;
         }
-    cout<<m<<endl;
+    }
 }
 
 class Wizard {
